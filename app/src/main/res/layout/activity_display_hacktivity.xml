@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="org.speedacm.hackingsigapp.DisplayHacktivity">
+
+
+    <LinearLayout android:id="@+id/buttonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button android:id="@+id/smallButton"
+            android:layout_weight="2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <Button android:id="@+id/bigButton"
+            android:text="Populate List"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:onClick="Populate"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/buttonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <EditText android:id="@+id/elementOne"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Option1"/>
+        <EditText android:id="@+id/elementTwo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Option2"/>
+        <EditText android:id="@+id/elementThree"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Option3"/>
+        <EditText android:id="@+id/elementFour"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Option4"/>
+        <EditText android:id="@+id/elementFive"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Option5"/>
+        <EditText android:id="@+id/elementSix"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Option6"/>
+        <EditText android:id="@+id/elementSeven"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Option7"/>
+        <EditText android:id="@+id/elementEight"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Option8"/>
+
+    </LinearLayout>
+    <Spinner android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
